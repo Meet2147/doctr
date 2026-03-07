@@ -1,14 +1,24 @@
-<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="320" rx="28" fill="#F5F4EF"/>
-  <rect x="28" y="28" width="126" height="126" rx="24" fill="#1F1A17"/>
-  <rect x="46" y="46" width="90" height="18" rx="8" fill="#FFF4E5"/>
-  <rect x="46" y="76" width="66" height="18" rx="8" fill="#F8D9BE"/>
-  <rect x="46" y="106" width="78" height="18" rx="8" fill="#CB3A1D"/>
-  <path d="M174 92C174 74.3269 188.327 60 206 60H286C303.673 60 318 74.3269 318 92V172C318 189.673 303.673 204 286 204H206C188.327 204 174 189.673 174 172V92Z" fill="#0E7C66"/>
-  <path d="M206 88H286V118H206V88Z" fill="#E9FFF8"/>
-  <path d="M206 132H286V162H206V132Z" fill="#B8F0E2"/>
-  <path d="M206 176H286V206H206V176Z" fill="#7FD9C4"/>
-  <text x="350" y="132" fill="#1F1A17" font-family="Space Grotesk, Arial, sans-serif" font-size="110" font-weight="700">doctr</text>
-  <text x="352" y="190" fill="#5A524D" font-family="IBM Plex Mono, Menlo, monospace" font-size="30" font-weight="500">multi-format tree indexing</text>
+<svg width="900" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="240" rx="20" fill="#ECECEC"/>
+
+  <!-- Icon -->
+  <g transform="translate(70 42)">
+    <circle cx="80" cy="118" r="13" fill="#2F83D4"/>
+
+    <path d="M80 118L52 64" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M80 118L108 64" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+
+    <path d="M52 64V34" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 64L36 48" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 64L68 48" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+
+    <path d="M108 64V34" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M108 64L92 48" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M108 64L124 48" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="285" y="142" fill="#1D1D1D" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="700" letter-spacing="-1.2">doctr</text>
+  <text x="289" y="180" fill="#4D4D4D" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="500">multi-format tree indexing</text>
 </svg>
 
