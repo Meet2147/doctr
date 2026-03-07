@@ -63,7 +63,7 @@ def create_xlsx_with_embedded_files(out_dir: Path, txt: Path, md: Path) -> Path:
 
 
 def main() -> None:
-    base = Path("examples/testdata")
+    base = Path("examples")
     embedded_dir = base / "embedded"
     hosts_dir = base / "hosts"
     _ensure_dir(base)
@@ -85,4 +85,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
