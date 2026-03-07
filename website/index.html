@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>doctr | Multi-Format Tree Indexing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <header class="hero">
+      <p class="eyebrow">doctr</p>
+      <h1>Index PDFs, DOCX, XLSX, and embedded files into a tree.</h1>
+      <p class="subtitle">
+        Deterministic, local-first indexing. Plug any LLM later for chat.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#quickstart">Quickstart</a>
+        <a class="btn ghost" href="#api">API Reference</a>
+      </div>
+      <div class="pill-row">
+        <span>PDF</span><span>DOCX</span><span>XLSX/XLSM</span><span>Markdown</span><span>Embedded Files</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="quickstart">
+        <h2>Quickstart</h2>
+        <pre><code>pip install -e '.[dev,office,docling]'
+
+from doctr import index_document
+idx = index_document(
+    "/path/to/report.pdf",
+    include_embedded=True,
+    max_embedded_depth=2,
+)
+tree = idx.to_pageindex_dict(include_empty_nodes=False)</code></pre>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h3>1. Document Input</h3>
+          <p>Accept `pdf/docx/xlsx/xlsm/md/txt/msg` with one entrypoint.</p>
+          <pre><code>from doctr import index_document
+idx = index_document("/path/to/file.docx")</code></pre>
+        </article>
+        <article class="card">
+          <h3>2. Docling Conversion</h3>
+          <p>Use Docling for layout + OCR + reading order extraction.</p>
+          <pre><code>from doctr import DoclingConverterAdapter
+converted = DoclingConverterAdapter().convert("/path/to/file.pdf")</code></pre>
+        </article>
+        <article class="card">
+          <h3>3. Tree Index Builder</h3>
+          <p>Produce PageIndex-style nodes with IDs and page ranges.</p>
+          <pre><code>from doctr import DocumentPipeline
+p = DocumentPipeline()
+idx = p.build_tree_index(converted=converted)</code></pre>
+        </article>
+        <article class="card">
+          <h3>4. Retrieval/Chat Layer</h3>
+          <p>Retrieve compact context, then send to Sonar or any model.</p>
+          <pre><code>ctx = p.retrieve_for_chat(
+  idx, "What changed in supervision?", top_k=6
+)</code></pre>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Sample Output</h2>
+        <pre><code>{
+  "title": "Financial Stability",
+  "node_id": "0006",
+  "start_index": 21,
+  "end_index": 22,
+  "summary": "The Federal Reserve ...",
+  "nodes": [
+    {
+      "title": "Monitoring Financial Vulnerabilities",
+      "node_id": "0007",
+      "start_index": 22,
+      "end_index": 28,
+      "summary": "The Federal Reserve's monitoring ..."
+    }
+  ]
+}</code></pre>
+      </section>
+
+      <section class="panel" id="api">
+        <h2>Core API</h2>
+        <ul>
+          <li><code>index_document(...)</code></li>
+          <li><code>DocumentIndexer.index_document(...)</code></li>
+          <li><code>DocumentIndexer.index_with_ocr(...)</code></li>
+          <li><code>DocumentPipeline.document_input(...)</code></li>
+          <li><code>DocumentPipeline.docling_conversion(...)</code></li>
+          <li><code>DocumentPipeline.build_tree_index(...)</code></li>
+          <li><code>DocumentPipeline.retrieve_for_chat(...)</code></li>
+          <li><code>retrieve_context(...)</code></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>doctr • open-source tree indexing for multi-format documents</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
+

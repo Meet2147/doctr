@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "doctr"
+version = "0.1.0"
+description = "Open-source document indexing library for building hierarchical trees from PDF and Markdown."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "PDFIndexing Contributors" }
+]
+dependencies = [
+  "pypdf>=4.3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+]
+ocr = [
+  "requests>=2.32.0",
+]
+docling = [
+  "docling>=2.0.0",
+]
+office = [
+  "python-docx>=1.1.2",
+  "openpyxl>=3.1.5",
+]
+
+[project.scripts]
+doctr = "doctr.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/doctr", "src/pdfindexing"]
