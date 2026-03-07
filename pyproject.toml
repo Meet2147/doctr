@@ -3,8 +3,8 @@ requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "doctr"
-version = "0.1.0"
+name = "doctr-index"
+version = "0.1.1"
 description = "Open-source document indexing library for building hierarchical trees from PDF and Markdown."
 readme = "README.md"
 requires-python = ">=3.10"

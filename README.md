@@ -15,7 +15,8 @@ Works for `pdf`, `docx`, `xlsx/xlsm`, `md/markdown`, `txt`, `msg`, plus optional
 
 ## Package Name
 
-Official package/import name is now **`doctr`**.
+PyPI distribution name: **`doctr-index`**  
+Python import name: **`doctr`**
 
 Compatibility:
 - Legacy imports from `pdfindexing` are still supported via shim modules.
@@ -25,6 +26,11 @@ Compatibility:
 Core:
 ```bash
 pip install -e '.[dev]'
+```
+
+From PyPI:
+```bash
+pip install doctr-index
 ```
 
 With Office (`docx`, `xlsx`, `xlsm`):
