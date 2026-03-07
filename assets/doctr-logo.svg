@@ -1,24 +1,16 @@
 <svg width="900" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="900" height="240" rx="20" fill="#ECECEC"/>
-
-  <!-- Icon -->
-  <g transform="translate(70 42)">
-    <circle cx="80" cy="118" r="13" fill="#2F83D4"/>
-
-    <path d="M80 118L52 64" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
-    <path d="M80 118L108 64" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
-
-    <path d="M52 64V34" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
-    <path d="M52 64L36 48" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
-    <path d="M52 64L68 48" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
-
-    <path d="M108 64V34" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
-    <path d="M108 64L92 48" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
-    <path d="M108 64L124 48" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+  <g transform="translate(70 18)">
+    <circle cx="80" cy="40" r="13" fill="#2F83D4"/>
+    <path d="M80 40L52 94" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M80 40L108 94" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 94V124" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 94L36 110" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 94L68 110" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M108 94V124" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M108 94L92 110" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M108 94L124 110" stroke="#2F83D4" stroke-width="7" stroke-linecap="round"/>
   </g>
-
-  <!-- Wordmark -->
   <text x="285" y="142" fill="#1D1D1D" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="700" letter-spacing="-1.2">doctr</text>
   <text x="289" y="180" fill="#4D4D4D" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="500">multi-format tree indexing</text>
 </svg>
-
