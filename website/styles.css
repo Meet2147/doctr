@@ -1,11 +1,11 @@
 :root {
-  --bg: #f5f4ef;
-  --ink: #1f1a17;
-  --muted: #5a524d;
-  --card: #fffaf2;
-  --line: #d6cfc7;
-  --brand: #cb3a1d;
-  --accent: #0e7c66;
+  --bg: #f3f8ff;
+  --ink: #112033;
+  --muted: #3a5f85;
+  --card: #ffffff;
+  --line: #c9dcf3;
+  --brand: #2f83d4;
+  --accent: #1d5fa1;
   --mono: "IBM Plex Mono", monospace;
   --sans: "Space Grotesk", sans-serif;
 }
@@ -18,7 +18,7 @@ body {
   margin: 0;
   font-family: var(--sans);
   color: var(--ink);
-  background: radial-gradient(circle at 15% 5%, #ffe7cb, transparent 40%), var(--bg);
+  background: radial-gradient(circle at 15% 5%, #dbeeff, transparent 40%), var(--bg);
 }
 
 .bg-orb {
@@ -33,7 +33,7 @@ body {
   height: 380px;
   right: -90px;
   top: -80px;
-  background: rgba(203, 58, 29, 0.2);
+  background: rgba(47, 131, 212, 0.24);
 }
 
 .orb-2 {
@@ -41,7 +41,7 @@ body {
   height: 320px;
   left: -100px;
   bottom: 10%;
-  background: rgba(14, 124, 102, 0.2);
+  background: rgba(29, 95, 161, 0.2);
 }
 
 .hero {
@@ -109,7 +109,7 @@ h1 {
 }
 
 .pill-row span {
-  background: #efe7df;
+  background: #ebf4ff;
   border: 1px solid var(--line);
   border-radius: 999px;
   font-size: 0.8rem;
@@ -149,8 +149,8 @@ h3 {
 
 pre {
   margin: 10px 0 0;
-  background: #1f1a17;
-  color: #f8f4ef;
+  background: #0f2a44;
+  color: #eaf4ff;
   border-radius: 12px;
   padding: 12px;
   overflow-x: auto;
@@ -178,4 +178,3 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-
