@@ -51,10 +51,10 @@ body {
 }
 
 .hero-logo {
-  width: min(420px, 88%);
+  width: min(170px, 36%);
   height: auto;
   display: block;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 
 .eyebrow {
