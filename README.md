@@ -80,7 +80,7 @@ context = pipeline.retrieve_for_chat(index, "What are the key risks?", top_k=6)
 print(context)
 ```
 
-## API Usage Reference
+## Python Function Reference
 
 ### Core indexing
 ```python
@@ -101,7 +101,7 @@ idx5 = index_markdown_file("/path/to/file.md")
 idx6 = index_markdown_text("# Root\n## Child")
 ```
 
-### Class API
+### Class Usage
 ```python
 from doctr import DocumentIndexer
 
