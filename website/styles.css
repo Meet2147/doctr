@@ -50,6 +50,13 @@ body {
   padding: 56px 20px 24px;
 }
 
+.hero-logo {
+  width: min(420px, 88%);
+  height: auto;
+  display: block;
+  margin: 0 0 12px;
+}
+
 .eyebrow {
   font-family: var(--mono);
   color: var(--brand);
