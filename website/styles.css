@@ -50,11 +50,21 @@ body {
   padding: 56px 20px 24px;
 }
 
+.hero-brand {
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+}
+
 .hero-logo {
   width: min(170px, 36%);
   height: auto;
   display: block;
-  margin: 0 0 8px;
+  margin: 0;
 }
 
 .eyebrow {
